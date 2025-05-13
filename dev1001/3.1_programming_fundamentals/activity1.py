@@ -9,3 +9,8 @@ print(f'My favorite food is {fav_food} and my favorite number is {life_the_unive
 # 4.  If your number was a float, try printing it again using an f-string,
 # but format it to display with only one decimal place (e.g., `:.1f`).
 print(f'My favorite number (formatted) is {life_the_universe_and_everything:.1f}')
+
+favorite_number = 8
+favorite_food = "grapes"
+
+print(f"My favorite food is {favorite_food} and my favorite number is {favorite_number}.")
