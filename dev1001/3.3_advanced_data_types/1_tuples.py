@@ -16,7 +16,6 @@ empty_tuple = ()
 print(f"Point: {point}")
 print(f"Color: {rgb_color}")
 
-"""
 # Accessing elements (Zero-indexed)
 print(f"X-coordinate: {point[0]}")
 print(f"Blue value: {rgb_color[2]}")
@@ -48,4 +47,4 @@ print(f"New point (original unchanged): {new_point}")
 #           start_index is inclusive, end_index is exclusive.
 first_two_color_values = rgb_color[0:2]
 print(f"First two color values: {first_two_color_values}")
-"""
+
