@@ -40,3 +40,42 @@ print("Today's Tasks:")
 for index, task in enumerate(tasks_today):
     print(f"{index + 1}. {task}") # User-friendly 1-based indexing
 print("-" * 30 + "\n")
+
+## Loops
+# 2. `for...in range()`: Processing a fixed number of times
+
+# *   **Tasks:**
+# 1.  **`while` Loop Temperature Check:**
+# *   Imagine a sensor reading. Start with `current_temp = 18`.
+current_temp = 18
+
+# *   Write a `while` loop that keeps printing "Temperature ({current_temp}°C) is cool, increasing..." and increments `current_temp` by 1, as long as `current_temp` is less than 22.
+while current_temp < 22:
+    print(f"Temperature {current_temp}°C is cool, increasing...")
+    current_temp += 1
+for i in range(current_temp):
+    print(f"Temperature {i + 1}°C is optimal.")
+print(current_temp * 5)
+
+
+
+# *   Once it reaches 22 or more, print "Temperature ({current_temp}°C) is optimal."
+# while current_temp >= 22:
+#     print(f"Temperature {current_temp}°C is optimal.")
+
+
+
+# 2.  **`for...in range()` Odd Numbers:**
+# *   Print all odd numbers between 1 and 10 (inclusive) using a `for` loop with `range()`. (Hint: `range()` can take a step argument).
+# 3.  **`for...in iterable` (dictionary) with Conditional Logic:**
+# *   Using the `inventory` dictionary from earlier:
+#     ```python
+#     inventory = {"laptop_stand": 12, "usb_c_hub": 32, "webcam": 8, "ergonomic_keyboard": 18}
+#     ```
+# *   Iterate through the inventory. For each item, if its quantity is less than 10, print an "Order more [item_name]!" message. Otherwise, print "[item_name] stock is OK."
+# 4.  **`enumerate()` with a Twist:**
+# *   Given `guest_list = ["Alice", "Bob", "Charlie", "Diana"]`.
+# *   Use `enumerate` to print an invitation list like:
+#     *   "Invitation 1 for Alice"
+#     *   "Invitation 2 for Bob"
+#     *   ...etc.

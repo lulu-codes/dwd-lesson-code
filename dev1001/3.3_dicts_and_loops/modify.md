@@ -22,6 +22,7 @@
         *   Imagine a sensor reading. Start with `current_temp = 18`.
         *   Write a `while` loop that keeps printing "Temperature ({current_temp}°C) is cool, increasing..." and increments `current_temp` by 1, as long as `current_temp` is less than 22.
         *   Once it reaches 22 or more, print "Temperature ({current_temp}°C) is optimal."
+        
     2.  **`for...in range()` Odd Numbers:**
         *   Print all odd numbers between 1 and 10 (inclusive) using a `for` loop with `range()`. (Hint: `range()` can take a step argument).
     3.  **`for...in iterable` (dictionary) with Conditional Logic:**

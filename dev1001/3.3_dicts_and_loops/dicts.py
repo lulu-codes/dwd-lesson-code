@@ -37,4 +37,24 @@ if "wireless_mouse" in inventory:
 print(f"All product names (keys): {list(inventory.keys())}")
 print(f"All quantities (values): {list(inventory.values())}")
 print(f"All inventory entries (items): {list(inventory.items())}")
-print("-" * 30 + "\n")
+print("-" * 30 + "\n") # \n -> newline character
+
+# 1.  **New Product & Sale:**
+# A new product "webcam" arrives with a stock of 25 units. Add it to the inventory.
+inventory["webcam"] = 25
+print(f"Inventory after adding webcam: {inventory}")
+
+# A customer buys 3 "usb_c_hub". Update its quantity.
+inventory["usb_c_hub"] -= 3
+print(f"Inventory after updating usb quantity: {inventory}")
+
+# What happens if they try to buy more than available?
+# (Don't implement the check yet, just note the potential issue).
+
+# 2.  **Price Check:**
+# *   Create a *separate* dictionary called `product_prices` storing prices for at least "laptop_stand" ($25), "usb_c_hub" ($30), and "ergonomic_keyboard" ($75).
+# *   A customer asks for the price of "laptop_stand". Print its price.
+# *   What if they ask for the price of "webcam" which isn't in `product_prices` yet? Use `.get()` to print "Price not available" if it's not found.
+
+# 3.  **Stock Alert:**
+# *   For the "laptop_stand" in the `inventory`, check if its quantity is below 15. If it is, print a message like "Alert: Low stock for laptop_stand! Current quantity: [quantity]".
