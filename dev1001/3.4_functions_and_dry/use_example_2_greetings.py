@@ -23,7 +23,7 @@ print(f"User 1: {user1_msg}")
 user2_msg = generate_welcome_message(portal_name="StudentHub", username="BobBuilder")
 print(f"User 2: {user2_msg}")
 
-# 3. Using a mix, and overriding the default parameter
+# 3. Using a mix, and overriding the default parameter. (Positioning matters for the arguments without keywords).
 user3_msg = generate_welcome_message("CharlieChap", "Course Enrolment", login_attempts=3)
 print(f"User 3: {user3_msg}")
 
